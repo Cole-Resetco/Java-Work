@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NIOStreams",
+            "request": "launch",
+            "mainClass": "NIOStreams",
+            "projectName": "Java Projects_295e67f6"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hashmap",
             "request": "launch",
             "mainClass": "Hashmap",

@@ -15,9 +15,9 @@ import java.util.HashMap;
 import java.net.URI;
 
 public class NIOStreams {
-    public static void main(String[] args) {
+    public static void zipeFiles() {
 
-        String[] data = { "Line 1", "Line 2 2", "Line 3 3 3", "Line 4 4 4 4", "Line 5 5 5 5 5" };
+        String[] data = { "Line 1", "Line 2 2", "Line 3 3 3", "Line 4 4 4 4", "Line 5 5 5 5 5", "Line 6 6 6 6 6 6" };
 
         try (FileSystem zipFs = openZip(Paths.get("Data/data.zip"))) { // Creates a filesystem and passes in the path to
                                                                        // where the zip will be put

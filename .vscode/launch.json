@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MyStringJoiner",
+            "request": "launch",
+            "mainClass": "MyStringJoiner",
+            "projectName": "Java Projects_295e67f6"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NIOStreams",
             "request": "launch",
             "mainClass": "NIOStreams",

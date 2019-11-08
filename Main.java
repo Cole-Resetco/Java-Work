@@ -15,8 +15,9 @@ class Main {
             System.out.println("Available Sections: ");
             System.out.println("1) Simple Geometry Programs");
             System.out.println("2) Advanced Simple Programs");
-            System.out.println("Please use an integer to indicate what type of program you would like to run: ");
-            ;
+            System.out.println(
+                    "Please use an integer to indicate what type of Method you would like to run, or e to return: ");
+
             String input = s.nextLine();
             System.out.println();
 
@@ -109,7 +110,7 @@ class Main {
                 break;
             case "e":
                 System.out.println("Ending");
-                System.out.println(input);
+                // System.out.println(input);
                 mainLoop = 1;
                 break;
 

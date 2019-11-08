@@ -4,7 +4,19 @@ import java.io.*;
 //import java.util.*;
 
 public class IOStreams { // class to take an input string and output the individual characters
-    public static void main(String[] args) throws IOException {
+    public static void writeToData(String data) throws IOException {
+
+        try (BufferedOutputStream writer = new BufferedOutputStream(new FileOutputStream("./Data/data.txt", true))) {
+            String writestring = "\n" + data;
+
+            writer.write(writestring.getBytes());
+        } catch (IOException e) {
+            System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
+        }
+
+    }
+
+    public static void readFromData() throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader("./Data/data.txt"))) {
             // this is a try with reasources error handling. it auto closes our reader while
             // also going
@@ -31,14 +43,6 @@ public class IOStreams { // class to take an input string and output the individ
         } catch (IOException e) {
             System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
         }
-        try (BufferedOutputStream writer = new BufferedOutputStream(new FileOutputStream("./Data/data.txt", true))) {
-            String writestring = "\ndata";
-
-            writer.write(writestring.getBytes());
-        } catch (IOException e) {
-            System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
-        }
-
     }
 
 }
